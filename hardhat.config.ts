@@ -14,6 +14,7 @@ dotenv.config();
 
 const solcVersion = "0.8.17";
 const mnemonic = getMnemonic();
+const PRIVATE_KEY = process.env.PRIVATE_KEY || "";
 
 const config: HardhatUserConfig = {
   solidity: {
@@ -49,7 +50,7 @@ const config: HardhatUserConfig = {
       chainId: 137,
       url: getNodeUrl("polygon-matic", true, 137),
       saveDeployments: true,
-      accounts: { mnemonic },
+      accounts: [PRIVATE_KEY],
       companionNetworks: { l1: "mainnet" },
     },
     "polygon-mumbai": {
