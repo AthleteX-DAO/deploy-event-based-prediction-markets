@@ -12,3 +12,5 @@ artifacts
 
 yarn.lock
 package-lock.json
+
+ignition/deployments/*
