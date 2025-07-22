@@ -42,7 +42,7 @@ contract EventBasedPredictionMarket is Testable {
     bytes public customAncillaryData;
     uint256 public proposerReward = 10e18;
     uint256 public optimisticOracleLivenessTime = 3600; // 1 hour
-    uint256 public optimisticOracleProposerBond = 500e18;
+    uint256 public optimisticOracleProposerBond = 725e18;
 
     /****************************************
      *                EVENTS                *
